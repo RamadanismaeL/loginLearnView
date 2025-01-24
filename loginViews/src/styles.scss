@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 68%, rgba(153,246,255,1) 100%) no-repeat;
+  background-size: 300% 300%;
+  animation: color-change-5x 5s ease-in-out infinite alternate;
+}
+
+ @keyframes color-change-5x {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
